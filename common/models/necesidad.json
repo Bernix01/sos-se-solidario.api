@@ -1,0 +1,36 @@
+{
+  "name": "necesidad",
+  "plural": "necesidades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tipo": {
+      "type": "string",
+      "required": true,
+      "default": "1"
+    },
+    "cantidad": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "default": "Una necesidad."
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ca": {
+      "type": "belongsTo",
+      "model": "CA",
+      "foreignKey": "fk_necesidad_ca"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
