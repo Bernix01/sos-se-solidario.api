@@ -1,0 +1,10 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "main": {
+    "url": "${DATABASE_URL}",
+    "connector": "postgresql"
+  }
+}

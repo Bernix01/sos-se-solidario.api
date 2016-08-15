@@ -1,0 +1,52 @@
+{
+  "name": "CA",
+  "plural": "CAs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ubicacion": {
+      "type": "geopoint",
+      "required": true,
+      "default": {
+        "lat": 0,
+        "lng": 0
+      }
+    },
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "default": "CA"
+    },
+    "direccion": {
+      "type": "string",
+      "required": true,
+      "default": "N/A"
+    },
+    "fb": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "tw": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "dscr": {
+      "type": "string",
+      "required": true,
+      "default": "Un centro de acopio."
+    }
+  },
+  "validations": [],
+  "relations": {
+    "necesidades": {
+      "type": "hasMany",
+      "model": "necesidad",
+      "foreignKey": "fk_necesidad"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
