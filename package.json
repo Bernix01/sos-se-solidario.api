@@ -2,6 +2,9 @@
   "name": "sos-se-solidario-api",
   "version": "1.0.0",
   "main": "server/server.js",
+  "engines": {
+         "node": "4.x"
+     },
   "scripts": {
     "start": "node .",
     "pretest": "eslint .",
@@ -27,6 +30,6 @@
     "type": "",
     "url": ""
   },
-  "license": "UNLICENSED",
+  "license": "GPL",
   "description": "sos-se-solidario-api"
 }
